@@ -5,7 +5,7 @@
   "private": false,
   "description": "Properly title case selected text",
   "activationEvents": ["title-case:convert"],
-  "repository": "https://github.com/max/title-case",
+  "repository": "https://github.com/max/atom-title-case",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
