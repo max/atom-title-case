@@ -1,0 +1,16 @@
+{
+  "name": "title-case",
+  "main": "./lib/title-case",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Properly title case selected text",
+  "activationEvents": ["title-case:convert"],
+  "repository": "https://github.com/max/title-case",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "to-title-case": "0.1.3"
+  }
+}
