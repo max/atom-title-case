@@ -1,4 +1,4 @@
-# title-case package
+# Title-case Package
 
 Properly title case selected text.
 
