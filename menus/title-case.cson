@@ -1,0 +1,15 @@
+'menu': [
+  {
+    'label': 'Edit'
+    'submenu': [
+      'label': 'Text'
+      'submenu': [
+        { 'type': 'separator' }
+        {
+          'label': 'Title Case'
+          'command': 'title-case:convert'
+        }
+      ]
+    ]
+  }
+]
