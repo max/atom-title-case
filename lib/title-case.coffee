@@ -1,12 +1,13 @@
+toTitleCase = require('to-title-case')
+
 module.exports =
   activate: ->
-    atom.workspaceView.command "title-case:convert", => @convert()
+    atom.commands.add 'atom-workspace', 'title-case:convert': => @convert()
 
   convert: ->
-    editor = atom.workspace.activePaneItem
-    selection = editor.getSelection()
+    editor = atom.workspace.getActiveTextEditor()
+    selections = editor.getSelections()
 
-    toTitleCase = require('to-title-case')
-    cased = toTitleCase selection.getText()
-
-    selection.insertText("#{cased}")
+    for selection in selections
+      cased = toTitleCase selection.getText()
+      selection.insertText("#{cased}")

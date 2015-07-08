@@ -4,9 +4,9 @@
   "version": "0.2.0",
   "private": false,
   "description": "Properly title case selected text",
-  "activationEvents": [
-    "title-case:convert"
-  ],
+  "activationCommands": {
+    "atom-workspace": ["title-case:convert"]
+  },
   "repository": "https://github.com/max/atom-title-case",
   "license": "MIT",
   "engines": {
