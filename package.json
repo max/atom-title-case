@@ -1,7 +1,7 @@
 {
   "name": "title-case",
   "main": "./lib/title-case",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "description": "Properly title case selected text",
   "activationCommands": {
@@ -10,9 +10,9 @@
   "repository": "https://github.com/max/atom-title-case",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
-    "to-title-case": "0.1.3"
+    "to-title-case": "0.1.5"
   }
 }
