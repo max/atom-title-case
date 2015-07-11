@@ -6,8 +6,11 @@ module.exports =
 
   convert: ->
     editor = atom.workspace.getActiveTextEditor()
+    buffer = editor.getBuffer()
     selections = editor.getSelections()
 
-    for selection in selections
-      cased = toTitleCase selection.getText()
-      selection.insertText("#{cased}")
+    # Group these actions so they can be undone together
+    buffer.transact ->
+      for selection in selections
+        cased = toTitleCase selection.getText()
+        selection.insertText("#{cased}")
