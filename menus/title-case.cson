@@ -7,7 +7,7 @@
         { 'type': 'separator' }
         {
           'label': 'Title Case'
-          'command': 'title-case:convert'
+          'command': 'editor:title-case'
         }
       ]
     ]
