@@ -2,7 +2,7 @@ toTitleCase = require('to-title-case')
 
 module.exports =
   activate: ->
-    atom.commands.add 'atom-workspace', 'title-case:convert': => @convert()
+    atom.commands.add 'atom-workspace', 'editor:title-case': => @convert()
 
   convert: ->
     editor = atom.workspace.getActiveTextEditor()
