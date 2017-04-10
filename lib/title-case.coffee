@@ -13,4 +13,7 @@ module.exports =
     buffer.transact ->
       for selection in selections
         cased = toTitleCase selection.getText()
+        if(cased.length == 0)
+          selection.selectWord()
+          cased = toTitleCase selection.getText()
         selection.insertText("#{cased}")
